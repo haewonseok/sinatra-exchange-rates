@@ -1,0 +1,20 @@
+<h1>Currency pairs</h1>
+
+<ul> 
+<% @symbols.each do |the_symbol| %>
+  <li>
+    <a href="/<%= the_symbol %>">Convert 1 <%= the_symbol %> to...</a>
+  </li>
+<% end %>
+</ul>
+
+
+
+<!--my_hash = {
+  :@original_currency => "@destination_currency",
+}
+
+my_hash.each do |@original_currency, @destination_currency|
+  pp "Convert 1 #{@original_currency} to..."
+end
+-->
